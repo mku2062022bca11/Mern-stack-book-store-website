@@ -12,7 +12,6 @@ const postABook = async (req, res) => {
     res.status(500).send({ message: "Failed to create book" });
   }
 };
-
 // get all books
 const getAllBooks = async (req, res) => {
   try {
@@ -23,7 +22,6 @@ const getAllBooks = async (req, res) => {
     res.status(500).send({ message: "Failed to fetch books" });
   }
 };
-
 // get single Book
 const getSingleBook = async (req, res) => {
   try {
@@ -38,7 +36,6 @@ const getSingleBook = async (req, res) => {
     res.status(500).send({ message: "Failed to fetch book" });
   }
 };
-
 // Update Books Data
 const UpdateBook = async (req, res) => {
   try {
@@ -75,7 +72,6 @@ const deleteABook = async (req, res) => {
     res.status(500).send({ message: "Failed to delete a book" });
   }
 };
-
 module.exports = {
   postABook,
   getAllBooks,
